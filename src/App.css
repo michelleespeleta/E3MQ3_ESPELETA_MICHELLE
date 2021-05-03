@@ -1,0 +1,125 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: #DFB2A9;
+}
+
+nav{
+    margin: 0;
+    height: 8vh;
+}
+
+nav .nav-links{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 5rem;
+    height: 100%;
+    list-style: none;
+    background: #A6826C;
+    box-shadow: 0px 5px 7px #4C4C4B;
+}
+
+.nav-links li{
+    font-size: 1.5rem;
+    align-items: center;
+    text-shadow: 2.5px 2.5px #423928;
+}
+  
+.nav-links .user{
+    margin: auto 0 auto auto;
+    color: #E8E6E7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    margin: auto 5rem;
+    cursor: pointer;
+    z-index: 10;
+    text-shadow: 2.5px 2.5px #423928;
+  } 
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: auto;
+}
+
+main .greet{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 10%;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateX(-10%);
+    transform: translateY(-50%);
+}
+
+.greet h1{
+    font-size: 45px;
+    color: #423928;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px #E8E6E7;
+    text-decoration: underline;
+}
+
+.greet h2{
+    font-size: 25px;
+    color: #E8E6E7;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px #B78E80;
+}
+
+main .hs{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .hs .gif{
+    object-fit: contain;
+    height: 350px;
+    width: auto;
+    position: absolute;
+    left: 55%;
+    bottom: 30%;
+    box-shadow: 10px 10px #B78E80;
+}
+
+.about{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: auto;
+    color: #423938;
+    animation: glow 2s ease-in-out infinite alternate;   
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #08F7FE, 0 0 40px #08F7FE, 0 0 50px #08F7FE, 0 0 60px #09FBD3, 0 0 70px #09FBD3;
+    }
+    
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #09FBD3, 0 0 40px #FE53BB, 0 0 50px #FE53BB, 0 0 60px #F5D300, 0 0 70px #F5D300, 0 0 80px #F5D300;
+    }
+}
